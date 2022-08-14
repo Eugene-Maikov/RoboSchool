@@ -19,10 +19,22 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr); // 12-колоночная сетка
     gap: 40px; //отступ по бокам
+
+    @include mobile{
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
   // дочерний
   &__item {
     grid-column: 3 span;
+
+    @include high-desktop {
+      grid-column: 6 span;
+    }
+
+    @include mobile{
+      grid-column: 4 span;
+    }
   }
   &__digit {
     font-weight: 600;

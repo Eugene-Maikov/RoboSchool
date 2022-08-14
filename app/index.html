@@ -24,13 +24,18 @@
       <img loading="lazy" src="img/logo.svg" class="image" width="228" height="48" alt="Логотип RoboSchool">
     </a>
     <nav class="nav" title="Главное меню">
-      <ul class="list-reset nav__list">
+      <ul class="list-reset nav__list data-menu">
         <li class="nav__item"><a href="#about" class="nav__link" data-scroll>О школе</a></li>
         <li class="nav__item"><a href="#trainers" class="nav__link" data-scroll>Тренеры</a></li>
         <li class="nav__item"><a href="#tariffs" class="nav__link" data-scroll>Строимость</a></li>
       </ul>
     </nav>
-    <a class="phone" href="tel:+78000001122">+7 (800-00) 0-11-22</a>
+    <a class="phone header__phone" href="tel:+78000001122">+7 (800-00) 0-11-22</a>
+    <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
   </div>
 </header>
 
@@ -44,7 +49,14 @@
           Курсы повышения квалификации по робототехнике для педагогов начальной школы
         </span>
       </h1>
-      <a class="nav__link btn btn-reset" href="#tariffs" data-scroll>Записаться на курс</a>
+      <a class="hero__link btn btn-reset" href="#tariffs" data-scroll>Записаться на курс</a>
+    </div>
+    <div class="hero__image">
+      <picture>
+        <source srcset="img/hero-img.avif" type="image/avif">
+        <source srcset="img/hero-img.webp" type="image/webp">
+        <img loading="lazy" src="img/hero-img.png" class="image" width="783" height="917" alt="Девушка с тетрадями">
+      </picture>
     </div>
   </div>
 </section>
@@ -93,7 +105,11 @@
       <li class="benefits__item">
         <h3 class="benefits__subtitle">Практику
           <span class="tooltip">
-            <button class="btn-reset tooltip__btn" aria-describedby="id1"></button>
+            <button class="btn-reset tooltip__btn" aria-describedby="id1">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#tooltip-icon"></use>
+              </svg>
+            </button>
             <span class="tooltip__txt" role="tooltip" id="id1">
               <span class="visually-hidden">Тултип: </span>
               При наличии свободных мест
@@ -106,11 +122,158 @@
   </div>
 </section>
 
+      <section class="trainers section-offset" id="trainers">
+  <div class="container">
+    <h2 class="section-title">Профессиональные тренеры</h2>
+    <div class="swiper trainers__content">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="img/trainer-1.avif" type="image/avif">
+              <source srcset="img/trainer-1.webp" type="image/webp">
+              <img loading="lazy" src="img/trainer-1.jpg" class="trainers__image" width="360" height="500"
+                alt="Ирина Лайм">
+            </picture>
+            <div class="trainers__name">Ирина Лайм</div>
+            <div class="trainers__post">преподаватель по робототехнике</div>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer-1">Подробнее</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="img/trainer-2.avif" type="image/avif">
+              <source srcset="img/trainer-2.webp" type="image/webp">
+              <img loading="lazy" src="img/trainer-2.jpg" class="trainers__image" width="360" height="500"
+                alt="Марина Орлова">
+            </picture>
+            <div class="trainers__name">Марина Орлова</div>
+            <div class="trainers__post">преподаватель по робототехнике</div>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer-1">Подробнее</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="img/trainer-3.avif" type="image/avif">
+              <source srcset="img/trainer-3.webp" type="image/webp">
+              <img loading="lazy" src="img/trainer-3.jpg" class="trainers__image" width="360" height="500"
+                alt="Максим Петров">
+            </picture>
+            <div class="trainers__name">Максим Петров</div>
+            <div class="trainers__post">преподаватель по программированию</div>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer-1">Подробнее</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="img/trainer-4.avif" type="image/avif">
+              <source srcset="img/trainer-4.webp" type="image/webp">
+              <img loading="lazy" src="img/trainer-4.jpg" class="trainers__image" width="360" height="500"
+                alt="Константин Назаров">
+            </picture>
+            <div class="trainers__name">Константин Назаров</div>
+            <div class="trainers__post">преподаватель по робототехнике</div>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer-1">Подробнее</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="img/trainer-5.avif" type="image/avif">
+              <source srcset="img/trainer-5.webp" type="image/webp">
+              <img loading="lazy" src="img/trainer-5.jpg" class="trainers__image" width="360" height="500"
+                alt="Лиза Весенняя">
+            </picture>
+            <div class="trainers__name">Лиза Весенняя</div>
+            <div class="trainers__post">преподаватель по программированию</div>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer-1">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="trainers__nav">
+      <div class="swiper-scrollbar trainers__scroll"></div>
+      <div class="trainers__btns">
+        <button class="btn-reset trainers__slider-btn trainers__slider-btn--prev" aria-label="Перейти к предыдущему слайду"></button>
+        <button class="btn-reset trainers__slider-btn trainers__slider-btn--next" aria-label="Перейти к следующему слайду"></button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+      <section class="tariffs section-offset" id="tariffs">
+  <div class="container">
+    <h2 class="section-title">Выберите нужный пакет</h2>
+    <ul class="list-reset tariffs__list">
+      <li class="tariffs__item tariffs__item--current">
+        <h3 class="tariffs__subtitle">PRO</h3>
+        <div class="tariffs__price">20.000 ₽</div>
+        <p class="tariffs__descr">УМК по робототетхнике и программированию</p>
+        <button class="btn-reset btn tariffs__btn">Оставить заявку</button>
+      </li>
+      <li class="tariffs__item">
+        <h3 class="tariffs__subtitle">ROBO</h3>
+        <div class="tariffs__price">15.000 ₽</div>
+        <p class="tariffs__descr">УМК по робототетхнике </p>
+        <button class="btn-reset btn tariffs__btn">Оставить заявку</button>
+      </li>
+      <li class="tariffs__item">
+        <h3 class="tariffs__subtitle">PROG</h3>
+        <div class="tariffs__price">10.000 ₽</div>
+        <p class="tariffs__descr">УМК по программированию</p>
+        <button class="btn-reset btn tariffs__btn">Оставить заявку</button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="order">
+  <div class="container order__container">
+    <div class="order__left">
+      <h3 class="order__title">Запишитесь на курс со скидкой 10%</h3>
+      <p class="order__descr">Акция действительна до 10 марта 2022 года</p>
+    </div>
+    <div class="order__right">
+      <form action="#" class="form order__form">
+        <label class="form__label">
+          <input type="text" name="Имя" class="input-reset form__input input-name" placeholder="Имя">
+        </label>
+        <label class="form__label">
+          <input type="tel" name="Телефон" class="input-reset form__input input-tel" placeholder="Телефон">
+        </label>
+        <label class="form__label">
+          <input type="email" name="E-mail" class="input-reset form__input input-email" placeholder="E-mail">
+        </label>
+        <button class="btn-reset btn btn--dark form__btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+</section>
+
     </main>
 
     <footer class="footer">
-  <div class="container"></div>
+  <div class="container-fluid footer__container">
+    <div class="footer__left">
+      <a class="logo footer__logo" href="#">
+        <img loading="lazy" src="img/logo.svg" class="image" width="228" height="48" alt="Логотип RoboSchool">
+      </a>
+      <div class="footer__copy">© ROBO.SCHOOL</div>
+    </div>
+    <a class="phone" href="tel:+78000001122">+7 (800-00) 0-11-22</a>
+  </div>
 </footer>
+
+    <div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="trainer-1">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content"></div>
+  </div>
+</div>
 
   </div>
 </body>
